@@ -51,3 +51,5 @@
 {"timestamp":"00:06:26.017","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/images/wellness-hero.webp\\\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\\\"eager\\\"` property if this image is above the fold.\\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading\\u001b[39m\""}
 {"timestamp":"00:07:00.947","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
 {"timestamp":"00:13:27.130","source":"Server","level":"LOG","message":"✓ Compiled in 219ms"}
+{"timestamp":"00:19:29.183","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:19:38.441","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
