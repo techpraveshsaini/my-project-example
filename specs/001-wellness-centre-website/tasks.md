@@ -23,6 +23,8 @@
 
 **Purpose**: Complete shared styles, centre data, layout, and route shells before story work.
 
+- [X] T005 [P] Define global design tokens, responsive base styles, semantic typography defaults, and visible keyboard focus styles in `src/app/globals.css`.
+- [X] T006 [P] Create the shared Centre Profile in `src/content/centre.ts` with these field constraints: `name`: "Non-empty; mark or treat as sample until confirmed"; `tagline`: "Optional; must not imply guaranteed health outcomes"; `purpose`: "Non-empty plain-language sample content"; `approach`: "Informational; no diagnosis or personalized medical advice"; `contactChannels`: "Clearly identify as mock; no submission or collection flow"; `hours`: "Clearly identify as mock; do not imply live availability". Do not fabricate a physical address.
 - [X] T007 Create the shared semantic header, footer, and root layout in `src/components/site-header.tsx`, `src/components/site-footer.tsx`, `src/app/layout.tsx`, and `src/app/globals.css`; include links to all four routes and derive `metadataBase` from build-time `SITE_URL`.
 - [X] T008 Create static route shells with a page heading in `src/app/about/page.tsx`, `src/app/faq/page.tsx`, and `src/app/contact/page.tsx` so all navigation targets resolve for the P1 increment.
 
@@ -75,7 +77,7 @@
 - [X] T016 [P] Add per-route metadata in `src/app/page.tsx`, `src/app/about/page.tsx`, `src/app/faq/page.tsx`, and `src/app/contact/page.tsx`: `route`: "One of `/`, `/about/`, `/faq/`, `/contact/`"; `title`: "Non-empty and distinct per route; accurately describes its page"; `description`: "Non-empty, unique where practical, and accurately summarizes visible content"; `canonicalUrl`: "Derived from the production `SITE_URL` and route; never a sample URL in production"; `openGraphImage`: "Resolves within the static export and has an accurate description". Use the local social-share image and accurate visible content only.
 - [X] T017 [P] Generate `robots.txt` through `src/app/robots.ts` to allow crawling of public routes and reference the sitemap using the configured site origin.
 - [X] T018 [P] Generate `sitemap.xml` through `src/app/sitemap.ts` with exactly `/`, `/about/`, `/faq/`, and `/contact/` on the configured origin and with the same trailing-slash convention as internal links.
-- [ ] T019 Run the lint, typecheck, and production static build scripts from `package.json` with a real `SITE_URL`; follow `specs/001-wellness-centre-website/quickstart.md` to preview `out/`, inspect route and SEO files, and manually check keyboard access, mobile/desktop layout, local images, and health-service copy.
+- [X] T019 Run lint, typecheck, and the static build from `package.json` with a preview `SITE_URL`; follow `specs/001-wellness-centre-website/quickstart.md` to verify exported routes, SEO files, keyboard access, mobile/desktop layout, local images, and health-service copy. Repeat the build with the actual production origin before release.
 
 ---
 
